@@ -5,7 +5,7 @@
 
 class Bien
 {
-protected:
+protected :
     double valor = 0.0;
 public:
     Bien();

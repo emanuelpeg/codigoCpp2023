@@ -5,5 +5,6 @@ GestorContable::GestorContable()
 }
 
 void GestorContable::imprimir(Bien * unBien){
-    cout << *unBien << " amortizacion : "<< unBien->amortizar() << endl;
+    cout << *unBien << " amortizacion : "
+         << unBien->amortizar() << endl;
 }
