@@ -38,7 +38,7 @@ void MainWindow::on_timer()
 {
     int time = this->ui->lcdNumber->intValue();
     this->ui->lcdNumber->display(time + 1);
-    if (time >= 4) {
+    if (time >= 5) {
         auto palette = this->ui->lcdNumber->palette();
         palette.setColor(palette.WindowText, QColor(255, 0, 0));
         this->ui->lcdNumber->setPalette(palette);
