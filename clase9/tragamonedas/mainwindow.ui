@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>962</width>
+    <height>621</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Tragamonedas</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="sizeConstraint">
+     <enum>QLayout::SetDefaultConstraint</enum>
+    </property>
+    <item>
+     <widget class="QFrame" name="frame">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="1" column="1">
+        <widget class="QLCDNumber" name="lcdNumber_5"/>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLCDNumber" name="lcdNumber_2"/>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLCDNumber" name="lcdNumber_6"/>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLCDNumber" name="lcdNumber"/>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLCDNumber" name="lcdNumber_3"/>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLCDNumber" name="lcdNumber_4"/>
+       </item>
+       <item row="0" column="2">
+        <widget class="QLCDNumber" name="lcdNumber_7"/>
+       </item>
+       <item row="1" column="2">
+        <widget class="QLCDNumber" name="lcdNumber_8"/>
+       </item>
+       <item row="2" column="2">
+        <widget class="QLCDNumber" name="lcdNumber_9"/>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="frame_2">
+      <property name="baseSize">
+       <size>
+        <width>0</width>
+        <height>10</height>
+       </size>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QFrame" name="frame_3">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QFrame" name="frame_4">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <widget class="QLabel" name="label">
+             <property name="geometry">
+              <rect>
+               <x>20</x>
+               <y>20</y>
+               <width>80</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>score: </string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_2">
+             <property name="geometry">
+              <rect>
+               <x>20</x>
+               <y>90</y>
+               <width>80</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>coins: </string>
+             </property>
+            </widget>
+            <widget class="QSpinBox" name="spinBox">
+             <property name="geometry">
+              <rect>
+               <x>80</x>
+               <y>80</y>
+               <width>191</width>
+               <height>29</height>
+              </rect>
+             </property>
+            </widget>
+            <widget class="QLabel" name="score">
+             <property name="geometry">
+              <rect>
+               <x>80</x>
+               <y>10</y>
+               <width>351</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>20</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>TextLabel</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="pushButton_2">
+             <property name="geometry">
+              <rect>
+               <x>170</x>
+               <y>140</y>
+               <width>106</width>
+               <height>30</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Bet</string>
+             </property>
+            </widget>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="frame_5">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton">
+         <property name="text">
+          <string>play</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>962</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menulevel">
+    <property name="title">
+     <string>level</string>
+    </property>
+    <addaction name="actioneasy"/>
+    <addaction name="actionmedium"/>
+    <addaction name="actionhard"/>
+   </widget>
+   <addaction name="menulevel"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actioneasy">
+   <property name="text">
+    <string>easy</string>
+   </property>
+  </action>
+  <action name="actionmedium">
+   <property name="text">
+    <string>medium</string>
+   </property>
+  </action>
+  <action name="actionhard">
+   <property name="text">
+    <string>hard</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
